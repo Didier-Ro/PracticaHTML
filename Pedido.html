@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PastelArte</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif
+        }
+        body{
+            background-color: aqua;
+        }
+        p{
+            font-size: larger;
+            font-weight: bold;
+        }
+        label{
+            font-weight: bold;
+        }
+        input{
+            background-color:rgb(255, 255, 255);
+        }
+        select{
+            background-color:white;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Crea tú propia experiencia</h1>
+
+    <form action="pedido.js">
+        <label for="Nombre">Nombre de la persona que hace el pedido</label><br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre"><br>
+        <label for="Telefono">Danos un número de teléfono</label><br>
+        <input type="tel" name="Telefono" id="Telefono" placeholder="Telefono"><br>
+        <label for="Correo">Escriba un correo</label><br>
+        <input type="email" name="Correo" id="Correo" placeholder="Correo">
+
+        <p>Elige tu sabor o sabores</p>
+        <label for="sabor1">Chocolate</label>
+        <input type="checkbox" name="sabor1" id="sabor1" value="chocolate"><br>
+        <label for="sabor2">Vainilla</label>
+        <input type="checkbox" name="sabor2" id="sabor2" value="vainilla"><br>
+        <label for="sabor3">Tres Leches</label>
+        <input type="checkbox" name="sabor3" id="sabor3" value="tresleches"><br>
+        <label for="sabor4">Red Velvet</label>
+        <input type="checkbox" name="sabor4" id="sabor4" value="redvelvet"><br>
+        <label for="sabor5">Zanahoria</label>
+        <input type="checkbox" name="sabor5" id="sabor6" value="zanahoria"><br>
+
+        <p>Elige tu decoración o decoraciones</p>
+        <label for="decoracion1">Cubierta de chocolate</label>
+        <input type="checkbox" name="decoracion1" id="decoracion1" value="cubiertachocolate"><br>
+        <label for="decoracion2">Chispas de chocolate</label>
+        <input type="checkbox" name="decoracion2" id="decoracion2" value="chispas"><br>
+        <label for="decoracion3">Fruta</label>
+        <input type="checkbox" name="decoracion3" id="decoracion3" value="fruta"><br>
+        <label for="decoracion4">Ferreros</label>
+        <input type="checkbox" name="decoracion4" id="decoracion4" value="ferreros">
+        <br><br>
+
+        <p>Desea alguna bebida?</p>
+        <select name="bebida" id="bebida">
+            <option value="ninguna">Ninguna</option>
+            <option value="cafeamericano">Cafe Americano</option>
+            <option value="frapuccino">Frapuccino</option>
+            <option value="leche">Leche</option>
+            <option value="cocacola">Coca Cola</option>
+        </select>
+        <br><br>
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+</html>
